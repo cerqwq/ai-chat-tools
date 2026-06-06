@@ -180,7 +180,7 @@ class AIChatTools:
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens:300
+            max_tokens=300
         )
 
         try:
